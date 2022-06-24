@@ -1,0 +1,35 @@
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Samba</th>
+        <th>MPB</th>
+        <th>Rock</th>
+        <th>Pagode</th>
+        <th>Sertanejo</th>
+        <th>Forró</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let music of musicList">
+        <td>{{ music.samba }}</td>
+        <td>{{ music.mpb }}</td>
+        <td>{{ music.rock }}</td>
+        <td>{{ music.pagode }}</td>
+        <td>{{ music.sertanejo }}</td>
+        <td>{{ music.forro }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+    <div>
+      <h2>Nova Categoria: </h2>
+    </div>
+
+    <div>
+      <label>Nome: </label>
+      <input type="text" value="music"  [(ngModel)]="newMusic.id">
+      <input type="submit" value="Salvar">
+    </div>
+
+</div>
