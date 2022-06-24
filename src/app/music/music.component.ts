@@ -41,10 +41,9 @@ import { MusicService } from './music.service';
       }
     }
 
-    countMusic() {
-      if (label === "samba") {
-        this.musicList ++
-      }
-    }
+}let count = 0;
+
+function acrescentar() {
+  count++;
 
 }
